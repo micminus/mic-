@@ -1,0 +1,5 @@
+iterate range(1,  15) with y as str {
+    display "Y = " + y
+}
+
+display "End of programm"

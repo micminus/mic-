@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8a8888;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #aca8a8;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+p {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+ul {
+    margin-left: 40px;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+code {
+    font-family: Consolas, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif;
+    background-color: #272822;
+    color: rgb(199, 199, 199);
+    padding: 2px 4px;
+    border-radius: 3px;
+    display: inline-block;
+    white-space: pre;
+    margin-bottom: 0.5em;
+}
+
+.com {
+    color: #999;
+}
+.str {
+    color: #e6db74;
+}
+.kw {
+    color: #66d9ef;
+}
+.num {
+    color: #ae81ff;
+}
+.op {
+    color: #ff6cf2;
+}
+.kw2 {
+    color: #fd971f;
+}
+.kw3 {
+    color: #d8ea2d;
+}
+.kw4 {
+    color: #5ee6bb;
+}
+.kw5 {
+    color: #c16ebb;
+}
+.kw6 {
+    color: #b39d3d;
+}
+
+.ext {
+    color: #14e214;
+    line-height: 1;
+}
+.name {
+    color: #0f0;
+    transition: ease all 1.5s;
+}

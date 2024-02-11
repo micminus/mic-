@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="doc.css">
+
+    <title>Mic- - Doc</title>
+
+</head>
+<body>
+
+    <header>
+        <h1 class="name">Mic- - Doc</h1>
+    </header>
+
+    <main>
+        <p>Le langage de programmation <code class="name">Mic-</code> (extension : <code class="ext">.micm</code>) est créer dans l'optique suivante : apprendre et donner le gout a la programmation, ainsi qu'à être simple et lisible tout en restant extendable et personnalisable</p>
+
+        <h2>Mot clé de base :</h2>
+        <p>Pour les commentaires, utilisez le mot clé <code class="com">§</code>.</p>
+        <p>Pour afficher du texte dans la console, utilisez le mot clé <code class="kw">display</code>.</p>
+        <p>Pour récuperer une valeur, utilisez le mot clé <code class="kw">get</code> suivi du type et du nom voulus.</p>
+        <p>Exemples :</p>
+        <ul>
+            <li><code class="com">§ "Hello World"</code></li>
+            <li><code><span class="kw">display</span> <span class="str">"Hello World"</span></code></li>
+            <li><code><span class="kw">get</span> <span class="kw2">str</span> 'x'</code></li>
+        </ul>
+
+        <h2>Déclarations de variables :</h2>
+        <p>On utilise le mot clé <code class="kw3">hold</code> pour les variables qui peuvent changer.</p>
+        <p>On utilise le mot clé <code class="kw3">store</code> pour les variables qui ne peuvent pas changer.</p>
+
+        <p>Pour modifier des variables, on utilise le mot clé <code class="kw3">set</code>.</p>
+
+        <p>Il existe plusieurs type de variables :</p>
+        <ul>
+            <li><code class="kw2">int</code> pour les entiers</li>
+            <li><code class="kw2">float</code> pour les décimaux</li>
+            <li><code class="kw2">str</code> pour les chaines de caractères</li>
+            <li><code class="kw2">char</code> pour les caractères</li>
+            <li><code class="kw2">bool</code> pour les booleens (true/false)</li>
+            <li><code class="kw2">list</code> pour les listes</li>
+            <li><code class="kw2">dict</code> pour les dictionnaires</li>
+        </ul>
+
+        <p>Exemples :</p>
+        <ul>
+            <li><code><span class="kw3">hold</span> <span class="kw2">str</span> y = <span class="str">"10"</span>          <span class="com">§ y peut changer</span></code></li>
+            <li><code><span class="kw3">store</span> <span class="kw2">char</span> z = <span class="str">'a'</span>         <span class="com">§ z ne peut pas changer</span></code></li>
+            <li><code><span class="kw3">set</span> y = <span class="str">"15"</span>               <span class="com">§ y a changer</code></li>
+        </ul>
+
+
+        <h2>Loupes :</h2>
+        <p>On utilise le mot clé <code class="kw6">iterate</code>, <code class="kw6">with</code> et <code class="kw6">as</code> pour les loupes.</p>
+        <p>Exemples :</p>
+        <ul>
+            <li><code><span class="kw6">iterate</span> <span class="kw4">range</span>(<span class="num">1</span>, <span class="num">10</span>) <span class="kw6">with</span> x <span class="kw6">as</span> <span class="kw2">str</span> :
+    <span class="kw">display</span> x</code></li>
+            <li>
+                <code><span class="kw6">iterate</span> <span class="kw4">while</span> x < <span class="num">10</span> <span class="kw6">with</span> x <span class="kw6">as</span> <span class="kw2">str</span> :
+    <span class="kw">display</span> x</code>
+        </li>
+        </ul>
+        <a href="https://github.com/micplus/micplus/blob/master/doc/doc.md#loupes">Plus d'informations sur les loupes</a>
+
+        <h2>Conditions :</h2>
+        <p>On utilise le mot clé <code class="kw6">check</code> pour les conditions.</p>
+        <p>Si la condition est fausse, on utilise le mot clé <code class="kw6">otherwise</code>.</p>
+        <p>Et si la condition est fausse, mais que l'on a une autre condition, on utilise le mot clé <code class="kw6">otherwise check</code>.</p>
+        <p>Exemples :</p>
+        <ul>
+            <li><code><span class="kw6">check</span> x <span class="op"><</span> <span class="num">10</span> :
+    <span class="kw">display</span> <span class="str">"x < 10"</span>
+<span class="kw6">otherwise check</span> x = <span class="num">10</span> :
+    <span class="kw">display</span> <span class="str">"x = 10"</span>
+<span class="kw6">otherwise</span> :
+    <span class="kw">display</span> <span class="str">"x > 10"</span></code></li>
+        </ul>
+
+        <h2>Fonctions et Classes:</h2>
+        <p>On utilise le mot clé <code class="kw5">structure</code> pour les classes.</p>
+        <p>On utilise le mot clé <code class="kw5">process</code> pour les fonctions.</p>
+        <p>Exemples :</p>
+        <ul>
+            <li><code><span class="kw5">process</span> <span class="kw4">range</span>(x, y) {
+    <span class="kw">display</span> <span class="str">"x = "</span> <span class="op">+</span> x <span class="op">+</span> <span class="str">", y = "</span> <span class="op">+</span> y
+}</code></li>
+            <li><code><span class="kw5">structure</span> Point {
+    <span class="kw5">process</span> init(x, y) {
+        <span class="kw4">self</span>.x = x
+        <span class="kw4">self</span>.y = y
+    }
+
+    <span class="kw5">process</span> toString() {
+        <span class="kw">display</span> <span class="str">"x = "</span> <span class="op">+</span> <span class="kw4">self</span>.x <span class="op">+</span> <span class="str">", y = "</span> <span class="op">+</span> <span class="kw4">self</span>.y
+        }
+    }
+
+    Point(<span class="num">1</span>, <span class="num">2</span>).toString()</code></li>
+        </ul>
+
+        <h2>Libraries :</h2>
+        <p>On utilise le mot clé <code class="kw4">load</code> pour importer une librairie.</p>
+        <p>On utilise le mot clé <code class="kw4">share</code> pour déclarer une fonction ou une classe dans une librairie.</p>
+        <p>Exemples :</p>
+        <ul>
+            <li><code><span class="kw4">load</span> math
+<span class="kw3">local</span> <span class="kw2">int</span> x = math.random(<span class="num">1</span>, <span class="num">10</span>)</code></li>
+            <li><code><span class="kw5">process</span> sayhello() {
+    <span class="kw">display</span> <span class="str">"Hello World"</span>
+}
+
+<span class="kw4">share</span> sayhello</code></li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <p>© 2024 - Mic- - Tous droits reserves</p>
+    </footer>
+
+    <script src="doc.js"></script>
+
+</body>
+</html>
