@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- c:/Users/valen/Documents/GitHub/mic-/doc/details/loop.html -->
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../doc.css">
+
+    <title>Mic- - Doc - Loupes</title>
+
+</head>
+<body>
+
+    <header>
+        <button class="home" onclick="window.location.href='../doc.html'">Home</button>
+        <h1 class="name">Mic- - Doc - Loupes</h1>
+    </header>
+
+    <main>
+
+        <h2>Loupe</h2>
+        <p>Les loupes se forment de la manière suivante : </p>
+        <code><span class="kw6">iterate</span> <span class="kw4">range</span>(<span class="num">1</span>, <span class="num">10</span>) <span class="kw6">with</span> x <span class="kw6">as</span> <span class="kw2">str</span> :
+    <span class="kw">display</span> x</code>
+
+        <p>Le mot clé <code class="kw6">iterate</code> est important, étant donné que c'est lui qui permet de boucler.</p>
+        <p>Le mot clé <code class="kw4">range</code> permet de faire une boucle, mais peut être remplacer par un autre mot clé tel que :</p>
+        <ul>
+            <li><p></p><code class="kw4">while</code> permet de faire une boucle tant que la condition est fausse</p></li>
+            <li><p></p><code class="kw4">until</code> permet de faire une boucle jusqu'a ce que la condition soit vrai</p></li>
+            <li><p></p><code><span class= "kw4">length</span>(x)</code> permet de faire une boucle sur la longueur d'un tableau</p></li>
+        </ul>
+        <p>Le mot clé <code class="kw6">with</code> permet de déclarer la variable unique a la boucle, <code class="kw6">as</code> permet de donner le type de la variable.</p>
+
+        <p>Exemples :</p>
+        <ul>
+            <li><code><span class="kw6">iterate</span> <span class="kw4">range</span>(<span class="num">1</span>, <span class="num">10</span>) <span class="kw6">with</span> x <span class="kw6">as</span> <span class="kw2">str</span> :
+    <span class="kw">display</span> x</code></li>
+            <li><code><span class="kw6">iterate</span> <span class="kw4">while</span> x < <span class="num">10</span> <span class="kw6">with</span> x <span class="kw6">as</span> <span class="kw2">str</span> :
+    <span class="kw">display</span> x</code></li>
+            <li><code><span class="kw6">iterate</span> <span class="kw4">until</span> x < <span class="num">10</span> <span class="kw6">with</span> x <span class="kw7">as</span> <span class="kw2">str</span> :
+    <span class="kw">display</span> x</code></li>
+            <li><code><span class="kw6">iterate</span> <span class="kw4">length</span>(y) <span class="kw6">with</span> x <span class="kw6">as</span> <span class="kw2">str</span> :
+    <span class="kw">display</span> x</code></li>
+
+    </main>
+
+    <footer>
+        <p>© 2024 - Mic- - Tous droits reserves</p>
+    </footer>
+
+    <script src="../doc.js"></script>
+
+</body>
+</html>
