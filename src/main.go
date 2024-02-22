@@ -103,7 +103,7 @@ func main() {
 			fmt.Println("doc - Ouvre la documentation")
 		case "doc":
 			// on ouvre le fichier doc.html
-			filename := "C:/Users/valen/Documents/test/eee/langage_en_cours/doc/doc.html"
+			filename := "C:/Users/valen/Documents/test/eee/mic-/doc/doc.html"
 			var err error
 			switch runtime.GOOS {
 			case "linux":

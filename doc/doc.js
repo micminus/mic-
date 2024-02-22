@@ -11,5 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         currentColorIndex = (currentColorIndex + 1) % colors.length;
     }, 1500);
-        
-})
+
+    let tr = '<input type="checkbox" class="chek" disabled checked><label for="chek"></label>';
+    for (i=0; i<100; i++) {
+        document.getElementById("main").innerHTML = document.getElementById("main").innerHTML.replace("<c>", tr);
+    }
+});

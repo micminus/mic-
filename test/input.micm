@@ -1,5 +1,7 @@
-iterate range(1,  15) with y as str {
-    display "Y = " + y
+hold int y = 40
+
+iterate len(y) with x as str {
+    display "Y = " + x
 }
 
 display "End of programm"

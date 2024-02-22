@@ -6,11 +6,30 @@ body {
     padding: 0;
 }
 
+a {
+    color: #006781;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: ease 0.5s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #00ccff;
+    font-size: large;
+}
+
 header {
     background-color: #333;
     color: #aca8a8;
+
     padding: 10px;
+
     text-align: center;
+
+    position: fixed;
+    top: 0;
+
+    width: 100%;
 }
 
 h1 {
@@ -19,6 +38,8 @@ h1 {
 
 main {
     padding: 20px;
+
+    margin-top: 1.5rem;
 }
 
 h2 {
@@ -48,14 +69,42 @@ code {
     white-space: pre;
     margin-bottom: 0.5em;
 }
+input[type="checkbox"].chek {
+    display: none;
+}
+
 
 .home {
     position: fixed;
     top: 0;
     left: 0;
 
-    padding: 16px 8px;
+    padding: 20px 40px;
     border-radius: 0.3em;
+
+    border: none;
+    outline: none;
+
+    background-color: #333;
+    color: whitesmoke;
+
+    cursor: pointer;
+
+    transform: ease 0.5s;
+}
+.home:hover {
+    color: white;
+    font-size: large;
+    padding: 16px 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input[type="checkbox"].chek:checked+label::before {
+    content: '\f14a';
+    color: rgb(0, 255, 0);
+
+    font-size: 1em;
+    font-family: "Font Awesome 5 Free";
 }
 
 
